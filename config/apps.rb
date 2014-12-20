@@ -33,4 +33,6 @@ Padrino.configure_apps do
 end
 
 # Mounts the core application for this project
+
+Padrino.mount('Nifty::Buffy', :app_file => Padrino.root('buffy/app.rb')).to('/buffy')
 Padrino.mount('Nifty::App', :app_file => Padrino.root('app/app.rb')).to('/')
