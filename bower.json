@@ -1,0 +1,19 @@
+{
+  "name": "nifty",
+  "version": "0.0.1",
+  "homepage": "https://github.com/niftyn8/nifty",
+  "authors": [
+    "Nate West <natescott.west@gmail.com>"
+  ],
+  "description": "Useful apps for me",
+  "main": "application.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
