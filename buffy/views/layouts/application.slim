@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title Buffy
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    = javascript_include_tag "/components/jquery/dist/jquery.min.js"
+    = javascript_include_tag "/components/bootstrap/dist/js/bootstrap.min.js"
+    = stylesheet_link_tag "/components/bootstrap/dist/css/bootstrap.min.css"
+    = csrf_meta_tags
+
+  body
+    = yield
