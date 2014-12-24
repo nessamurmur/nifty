@@ -10,7 +10,6 @@ module Nifty
     end
 
     get 'auth/twitter/callback' do
-      binding.pry
       query_params = env['omniauth.auth']['credentials']
         .reduce("?") { |s, (k, v)| s << k + '=' + v + '&'  }
       query_params += ''
