@@ -181,7 +181,7 @@ DEPENDENCIES
   degenerate
   dotenv
   generative
-  jruby-openssl
+  jruby-openssl (~> 0.9.6)
   jruby-rack
   nifty!
   omniauth-twitter

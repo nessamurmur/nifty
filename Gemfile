@@ -34,7 +34,7 @@ gem 'twitter'
 
 # JRuby requirements
 
-gem 'jruby-openssl'
+gem 'jruby-openssl', '~> 0.9.6'
 gem 'jruby-rack'
 gem 'warbler'
 
