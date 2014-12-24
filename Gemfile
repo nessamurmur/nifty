@@ -28,6 +28,7 @@ gem 'padrino', '0.12.4'
 
 # Auth
 gem 'omniauth-twitter'
+gem 'warden'
 
 # Buffy
 gem 'twitter'

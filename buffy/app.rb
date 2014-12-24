@@ -7,9 +7,18 @@ module Nifty
 
     layout :application
 
+    use Warden::Manager
+
+    def current_user
+      env['warden'].user
+    end
+
     get("/") do
-      @auth = params[:token]
-      render 'application/root'
+      if current_user
+        render 'application/root'
+      else
+        redirect "/auth/twitter"
+      end
     end
   end
 end
