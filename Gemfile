@@ -49,3 +49,8 @@ gem 'warbler'
 group :development do
   gem 'pry'
 end
+
+group :test do
+  gem 'generative'
+  gem 'degenerate'
+end

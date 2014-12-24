@@ -30,12 +30,15 @@ GEM
     buftok (0.2.0)
     builder (3.2.2)
     coderay (1.1.0)
+    degenerate (0.0.3)
     diff-lcs (1.2.5)
     dotenv (1.0.2)
     equalizer (0.0.9)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.6-java)
+    generative (0.2.3)
+      rspec (>= 3.0)
     hashie (3.3.2)
     http (0.6.3)
       http_parser.rb (~> 0.6.0)
@@ -175,7 +178,9 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
+  degenerate
   dotenv
+  generative
   jruby-openssl
   jruby-rack
   nifty!
