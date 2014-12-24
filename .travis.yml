@@ -1,3 +1,6 @@
 langauge: ruby
 rvm:
   - jruby-19mode
+script:
+  - cp .env.example .env
+  - bundle exec rspec
