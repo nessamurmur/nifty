@@ -12,6 +12,7 @@ gemspec
 
 # Project requirements
 gem 'rake'
+gem 'dotenv'
 
 # Component requirements
 gem 'activerecord-jdbcpostgresql-adapter'
@@ -25,6 +26,14 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 # Padrino Stable Gem
 gem 'padrino', '0.12.4'
 
+# Auth
+gem 'omniauth-twitter'
+
+# Buffy
+gem 'twitter'
+
+# JRuby requirements
+
 gem 'jruby-openssl'
 gem 'jruby-rack'
 gem 'warbler'
@@ -36,3 +45,7 @@ gem 'warbler'
 # %w(core support gen helpers cache mailer admin).each do |g|
 #   gem 'padrino-' + g, '0.12.4'
 # end
+
+group :development do
+  gem 'pry'
+end

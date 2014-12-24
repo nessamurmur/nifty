@@ -7,6 +7,9 @@ module Nifty
 
     layout :application
 
-    get("/") { render 'application/root' }
+    get("/") do
+      @auth = params[:token]
+      render 'application/root'
+    end
   end
 end
