@@ -29,6 +29,7 @@ GEM
     arel (5.0.1.20140414130214)
     buftok (0.2.0)
     builder (3.2.2)
+    chronic (0.10.2)
     coderay (1.1.0)
     degenerate (0.0.3)
     diff-lcs (1.2.5)
@@ -149,6 +150,16 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4-java)
     tilt (1.4.1)
+    torquebox (4.0.0.alpha1-java)
+      torquebox-core (= 4.0.0.alpha1)
+      torquebox-scheduling (= 4.0.0.alpha1)
+      torquebox-web (= 4.0.0.alpha1)
+    torquebox-core (4.0.0.alpha1-java)
+    torquebox-scheduling (4.0.0.alpha1-java)
+      torquebox-core (= 4.0.0.alpha1)
+    torquebox-web (4.0.0.alpha1-java)
+      rack (>= 1.4.0, < 2.0)
+      torquebox-core (= 4.0.0.alpha1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -180,6 +191,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
+  chronic
   degenerate
   dotenv
   generative
@@ -194,6 +206,7 @@ DEPENDENCIES
   rspec
   sequel
   slim
+  torquebox
   twitter
   warbler
   warden
