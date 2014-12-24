@@ -8,6 +8,9 @@ require 'bundler/setup'
 require 'dotenv'
 Bundler.require(:default, RACK_ENV)
 
+
+Dir["#{PADRINO_ROOT}/buffy/roles/**/*.rb"].each { |f| load(f) }
+
 ##
 # ## Enable devel logging
 #
