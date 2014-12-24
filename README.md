@@ -1,6 +1,8 @@
 # Nifty
 
-A padrino gem
+[![Build Status](https://travis-ci.org/niftyn8/nifty.svg?branch=master)](https://travis-ci.org/niftyn8/nifty)
+
+Playing with ideas...
 
 ## Usage
 
