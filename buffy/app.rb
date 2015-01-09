@@ -20,5 +20,11 @@ module Nifty
         redirect "/auth/twitter"
       end
     end
+
+    post("/posts") do
+      Scheduling.schedule_tweet(params[:tweet], params[:time], current_user.twitter_client)
+      flash[:notice] = "Tweet Scheduled"
+      redirect_to "/buffy"
+    end
   end
 end

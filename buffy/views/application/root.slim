@@ -1,3 +1,10 @@
-.container-fluid
-p
- = current_user.username
+h2 Schedule a Tweet
+
+= form_tag '/buffy/posts', method: :post do
+  = field_set_tag do
+    p
+      = label_tag :tweet, for: 'tweet'
+      = text_field_tag :tweet, class: 'form-control', value: params[:tweet]
+      = label_tag :time, for: 'time'
+      = text_field_tag :time, class: 'form-control', value: params[:time]
+      = submit_tag "Schedule Post"

@@ -13,4 +13,9 @@ html
     = csrf_meta_tags
 
   body
-    = yield
+    .container-fluid
+      - if flash[:notice]
+        .alert.alert-notice.fade.in
+          = flash[:notice]
+          = button_tag 'x', class: 'close', data: { dismiss: 'alert' }
+      = yield
